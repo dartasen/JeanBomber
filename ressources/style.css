@@ -1,0 +1,103 @@
+
+/* Main classes */
+
+.root {
+    -fx-background-image: url("logos.png");
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #E8E8E8;
+}
+
+.button {
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+}
+
+.menu-button {
+    -fx-background-color: rgba(50,50,50,0.6);
+    -fx-text-fill: rgba(200,200,200,0.9);
+    -fx-font-size: 24px;
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(50,50,50,0.8);
+    -fx-text-fill: rgba(240,240,240,0.95);
+}
+
+/* Game classes */
+
+#game-primary-pane {
+    -fx-background-image: url("background.jpg");
+}
+
+.game-map-pane {
+    -fx-background-color: black;
+}
+
+.game-map-border {
+    -fx-background-color: rgba(50,50,50,0.8), transparent ;
+    -fx-background-insets: 0, 5 ;
+    -fx-padding: 20 ;
+}
+
+.scores-pane {
+    -fx-background-color: transparent;
+    -fx-background-image: url("frame.png");
+}
+
+.score-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+
+}
+
+/* Highscores classes */
+
+.highscores-scores-rectangle {
+    -fx-fill: rgba(170,170,170,0.2);
+    -fx-stroke: rgba(200,200,200,0.5);
+}
+
+.highscores-label {
+    -fx-text-alignment: center;     /*todo not working*/
+    -fx-font-size: 44px Tahoma;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-font-smoothing-type: lcd;
+
+}
+
+.highscores-pane-images {
+    -fx-background-size: cover;
+}
+
+.highscores-pane-images-right {
+    -fx-background-image: url("dragon-right.png");
+}
+
+.highscores-pane-images-left {
+    -fx-background-image: url("dragon-left.png");
+}
+
+#highscores-primary-pane {
+    -fx-background-image: url("treasures-cave.jpg");
+}
+
+#highscores-top-label {
+    -fx-font-size: 48px Tahoma;
+    -fx-text-fill: red;
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+    -fx-font-weight: bolder;
+    -fx-font-smoothing-type: lcd;
+}
+
+#highscores-bestscore-label {
+
+}
+
+#highscores-top-rectangle {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+}
