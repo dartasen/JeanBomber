@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.*?>
+
+
+<Pane id="game-primary-pane" fx:id="primaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" styleClass="root" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <StackPane layoutX="149.0" layoutY="154.0" prefHeight="391" prefWidth="529" styleClass="game-map-border">
+        <Canvas fx:id="gameMapPane" height="391" styleClass="game-map-pane" width="529" onMouseClicked="#focus"/>
+    </StackPane>
+
+    <Pane fx:id="gameScoresPane" layoutX="745.0" layoutY="28.0" prefHeight="693.0" prefWidth="510.0" styleClass="scores-pane">
+
+        <Button id="back-button" layoutX="211.0" layoutY="463.0" mnemonicParsing="false" onAction="#backToMenu" onMouseEntered="#mouseEnteredButton" onMouseExited="#mouseExitedButton" prefHeight="40.0" prefWidth="124.0" styleClass="button, menu-button" text="Quitter">
+            <focusTraversable>false</focusTraversable>
+            <font>
+            <Font size="18.0" />
+         </font>
+        </Button>
+
+        <TextField fx:id="LabelNom" layoutX="165.0" layoutY="140.0" opacity="0.78" prefHeight="25.0" prefWidth="165.0" text="Nom" focusTraversable="false"/>
+
+        <Label fx:id="LabelX" layoutX="165.0" layoutY="229.0" prefHeight="40.0" prefWidth="70.0" styleClass="score-label" text="x" />
+
+        <Label fx:id="LabelY" layoutX="335.0" layoutY="229.0" prefHeight="40.0" prefWidth="51.0" styleClass="score-label" text="y" />
+
+        <Label fx:id="LabelBombes" layoutX="165.0" layoutY="296.0" prefHeight="52.0" prefWidth="292.0" styleClass="score-label" text="Bombes" />
+
+        <Label fx:id="LabelScore" layoutX="165.0" layoutY="378.0" prefHeight="52.0" prefWidth="292.0" styleClass="score-label" text="Score" />
+
+        <Label layoutX="76.0" layoutY="313.0" prefHeight="18.0" prefWidth="70.0" text="Bombes :" textFill="#787878">
+         <font>
+            <Font name="AR JULIAN" size="14.0" />
+         </font>
+        </Label>
+
+        <Label layoutX="80.0" layoutY="395.0" prefHeight="18.0" prefWidth="62.0" text="Score :" textFill="#787878">
+         <font>
+            <Font name="AR JULIAN" size="14.0" />
+         </font>
+        </Label>
+
+        <Label layoutX="88.0" layoutY="240.0" prefHeight="18.0" prefWidth="187.0" text="X :                      Y:" textFill="#787878">
+         <font>
+            <Font name="AR JULIAN" size="14.0" />
+         </font>
+        </Label>
+
+        <Label layoutX="90.0" layoutY="149.0" prefHeight="18.0" prefWidth="42.0" text="Nom :" textFill="#787878">
+         <font>
+            <Font name="AR JULIAN" size="14.0" />
+         </font>
+        </Label>
+
+    </Pane>
+
+   <Label layoutX="343.0" layoutY="109.0" text="JeanBomberman Game" textFill="#cd2d2d" />
+
+</Pane>
